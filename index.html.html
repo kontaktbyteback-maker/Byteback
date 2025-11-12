@@ -1,393 +1,393 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ByteBack – Starter</title>
-    <meta name="description" content="Moderne, schnelle One‑Pager-Website als Startpunkt. Anpassbar mit deinem Text und Bildern." />
-    <meta name="color-scheme" content="light dark">
-  
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ByteBack – Starter</title>
+<meta name="description" content="Moderne, schnelle One‑Pager-Website als Startpunkt. Anpassbar mit deinem Text und Bildern." />
+<meta name="color-scheme" content="light dark">
 
-    <style>
-        /* ===== Design Tokens ===== */
+
+<style>
+/* ===== Design Tokens ===== */
 :root {
-            --bg: #0b0c0f;
-            --surface: #12141a;
-            --text: #e6e8ef;
-            --muted: #a5adbd;
-            --brand: #7c5cff;
-            --brand-2: #4ad6ff;
-            --radius: 16px;
-            --shadow: 0 10px 30px rgba(0,0,0,.25);
-            --maxw: 1100px;
-        }
-        @media (prefers-color-scheme: light) {
+--bg: #0b0c0f;
+--surface: #12141a;
+--text: #e6e8ef;
+--muted: #a5adbd;
+--brand: #7c5cff;
+--brand-2: #4ad6ff;
+--radius: 16px;
+--shadow: 0 10px 30px rgba(0,0,0,.25);
+--maxw: 1100px;
+}
+@media (prefers-color-scheme: light) {
 :root {
-            --bg: #f8fafc;
-            --surface: #ffffff;
-            --text: #0b1220;
-            --muted: #475569;
-        }
-        }
+--bg: #f8fafc;
+--surface: #ffffff;
+--text: #0b1220;
+--muted: #475569;
+}
+}
 
-        /* ===== Basis ===== */
-        * {
-            box-sizing: border-box
-        }
-        html,body {
-            margin: 0
-        }
-        body {
-            font: 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;
-            background: var(--bg);
-            color: var(--text)
-        }
-        a {
-            color: inherit;
-            text-decoration: none
-        }
-        img {
-            max-width: 100%;
-            display: block
-        }
-        .container {
-            max-width: var(--maxw);
-            margin-inline: auto;
-            padding: 24px
-        }
-        .card {
-            background: var(--surface);
-            border: 1px solid rgba(255,255,255,.08);
-            border-radius: var(--radius);
-            padding: 20px;
-            box-shadow: var(--shadow)
-        }
+/* ===== Basis ===== */
+* {
+box-sizing: border-box
+}
+html,body {
+margin: 0
+}
+body {
+font: 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;
+background: var(--bg);
+color: var(--text)
+}
+a {
+color: inherit;
+text-decoration: none
+}
+img {
+max-width: 100%;
+display: block
+}
+.container {
+max-width: var(--maxw);
+margin-inline: auto;
+padding: 24px
+}
+.card {
+background: var(--surface);
+border: 1px solid rgba(255,255,255,.08);
+border-radius: var(--radius);
+padding: 20px;
+box-shadow: var(--shadow)
+}
 
-        /* ===== Header / Nav ===== */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 50;
-            background: rgba(0,0,0,.25);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255,255,255,.08)
-        }
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px
-        }
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 8px
-        }
-        .logo {
-            width: 36px;
-            height: 36px;
-            border-radius: 12px;
-            object-fit: cover
-        }
-        .menu {
-            display: flex;
-            gap: 16px;
-            align-items: center
-        }
-        .menu a {
-            opacity: .9;
-            padding: 10px 12px;
-            border-radius: 10px
-        }
-        .menu a:hover {
-            background: rgba(255,255,255,.06)
-        }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 12px 16px;
-            border-radius: 12px;
-            border: 1px solid rgba(255,255,255,.12);
-            background: linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
-            box-shadow: var(--shadow)
-        }
-        .btn.primary {
-            border: none;
-            background: linear-gradient(135deg,var(--brand),var(--brand-2));
-            color: white
-        }
-        .pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: .45rem .8rem;
-            border: 1px solid rgba(255,255,255,.12);
-            border-radius: 999px;
-            background: linear-gradient(180deg,rgba(255,255,255,.06),rgba(0,0,0,.06));
-            backdrop-filter: saturate(150%) blur(6px)
-        }
+/* ===== Header / Nav ===== */
+header {
+position: sticky;
+top: 0;
+z-index: 50;
+background: rgba(0,0,0,.25);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(255,255,255,.08)
+}
+.nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 16px
+}
+.brand {
+display: flex;
+align-items: center;
+gap: 8px
+}
+.logo {
+width: 36px;
+height: 36px;
+border-radius: 12px;
+object-fit: cover
+}
+.menu {
+display: flex;
+gap: 16px;
+align-items: center
+}
+.menu a {
+opacity: .9;
+padding: 10px 12px;
+border-radius: 10px
+}
+.menu a:hover {
+background: rgba(255,255,255,.06)
+}
+.btn {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+padding: 12px 16px;
+border-radius: 12px;
+border: 1px solid rgba(255,255,255,.12);
+background: linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+box-shadow: var(--shadow)
+}
+.btn.primary {
+border: none;
+background: linear-gradient(135deg,var(--brand),var(--brand-2));
+color: white
+}
+.pill {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+padding: .45rem .8rem;
+border: 1px solid rgba(255,255,255,.12);
+border-radius: 999px;
+background: linear-gradient(180deg,rgba(255,255,255,.06),rgba(0,0,0,.06));
+backdrop-filter: saturate(150%) blur(6px)
+}
 
-        /* ===== Hero ===== */
-        .hero {
-            padding: 80px 0;
-            background:
-            radial-gradient(800px 400px at 20% -10%, rgba(124,92,255,.35), transparent),
-            radial-gradient(800px 400px at 80% -10%, rgba(74,214,255,.35), transparent);
-        }
-        .hero-grid {
-            display: grid;
-            gap: 28px;
-            grid-template-columns: 1.15fr .85fr;
-            align-items: center
-        }
-        @media (max-width:900px) {
-            .hero-grid {
-                grid-template-columns: 1fr
-            }}
-        h1 {
-            font-size: clamp(28px,6vw,56px);
-            line-height: 1.1;
-            margin: 10px 0
-        }
-        .lead {
-            font-size: clamp(16px,2.5vw,20px);
-            color: var(--muted);
-            max-width: 70ch
-        }
+/* ===== Hero ===== */
+.hero {
+padding: 80px 0;
+background:
+radial-gradient(800px 400px at 20% -10%, rgba(124,92,255,.35), transparent),
+radial-gradient(800px 400px at 80% -10%, rgba(74,214,255,.35), transparent);
+}
+.hero-grid {
+display: grid;
+gap: 28px;
+grid-template-columns: 1.15fr .85fr;
+align-items: center
+}
+@media (max-width:900px) {
+.hero-grid {
+grid-template-columns: 1fr
+}}
+h1 {
+font-size: clamp(28px,6vw,56px);
+line-height: 1.1;
+margin: 10px 0
+}
+.lead {
+font-size: clamp(16px,2.5vw,20px);
+color: var(--muted);
+max-width: 70ch
+}
 
-        /* ===== Sections ===== */
-        section {
-            padding: 64px 0
-        }
-        h2 {
-            font-size: clamp(22px,4vw,36px);
-            margin: 0 0 12px
-        }
-        .grid-3 {
-            display: grid;
-            gap: 18px;
-            grid-template-columns: repeat(3,1fr)
-        }
-        @media (max-width:900px) {
-            .grid-3 {
-                grid-template-columns: 1fr
-            }}
-        .feature {
-            display: flex;
-            gap: 14px
-        }
-        .feature .icon {
-            flex: 0 0 38px;
-            height: 38px;
-            border-radius: 10px;
-            display: grid;
-            place-items: center;
-            background: linear-gradient(135deg,rgba(124,92,255,.25),rgba(74,214,255,.25))
-        }
+/* ===== Sections ===== */
+section {
+padding: 64px 0
+}
+h2 {
+font-size: clamp(22px,4vw,36px);
+margin: 0 0 12px
+}
+.grid-3 {
+display: grid;
+gap: 18px;
+grid-template-columns: repeat(3,1fr)
+}
+@media (max-width:900px) {
+.grid-3 {
+grid-template-columns: 1fr
+}}
+.feature {
+display: flex;
+gap: 14px
+}
+.feature .icon {
+flex: 0 0 38px;
+height: 38px;
+border-radius: 10px;
+display: grid;
+place-items: center;
+background: linear-gradient(135deg,rgba(124,92,255,.25),rgba(74,214,255,.25))
+}
 
-        /* ===== Gallery ===== */
-        .gallery {
-            display: grid;
-            gap: 12px;
-            grid-template-columns: repeat(6,1fr)
-        }
-        .gallery img {
-            border-radius: 12px;
-            aspect-ratio: 1/1;
-            object-fit: cover
-        }
-        @media (max-width:900px) {
-            .gallery {
-                grid-template-columns: repeat(3,1fr)
-            }}
+/* ===== Gallery ===== */
+.gallery {
+display: grid;
+gap: 12px;
+grid-template-columns: repeat(6,1fr)
+}
+.gallery img {
+border-radius: 12px;
+aspect-ratio: 1/1;
+object-fit: cover
+}
+@media (max-width:900px) {
+.gallery {
+grid-template-columns: repeat(3,1fr)
+}}
 
-        /* ===== Contact ===== */
-        form {
-            display: grid;
-            gap: 12px
-        }
-        input, textarea {
-            width: 100%;
-            padding: 12px 14px;
-            border-radius: 12px;
-            border: 1px solid rgba(0,0,0,.2);
-            background: rgba(255,255,255,.06);
-            color: inherit
-        }
-        label {
-            font-weight: 600
-        }
-        .status {
-            font-size: 14px;
-            color: var(--muted)
-        }
+/* ===== Contact ===== */
+form {
+display: grid;
+gap: 12px
+}
+input, textarea {
+width: 100%;
+padding: 12px 14px;
+border-radius: 12px;
+border: 1px solid rgba(0,0,0,.2);
+background: rgba(255,255,255,.06);
+color: inherit
+}
+label {
+font-weight: 600
+}
+.status {
+font-size: 14px;
+color: var(--muted)
+}
 
-        /* ===== Footer ===== */
-        footer {
-            padding: 40px 0;
-            color: var(--muted);
-            border-top: 1px solid rgba(255,255,255,.08)
-        }
-    </style>
+/* ===== Footer ===== */
+footer {
+padding: 40px 0;
+color: var(--muted);
+border-top: 1px solid rgba(255,255,255,.08)
+}
+</style>
 </head>
 
 <body>
-    <header>
-        <div class="container nav">
-            <div class="brand">
-                <span>ByteBack</span>
-            </div>
-            <nav class="menu">
-                <a href="#about">Über mich</a>
-                <a href="#services">Leistungen</a>
-                <a href="#work">Projekte</a>
-                <a href="#contact" class="btn">Kontakt</a>
-                <button id="mode" class="btn" aria-label="Theme umschalten">🌙</button>
-            </nav>
-        </div>
-    </header>
+<header>
+<div class="container nav">
+<div class="brand">
+<span>ByteBack</span>
+</div>
+<nav class="menu">
+<a href="#about">Über mich</a>
+<a href="#services">Leistungen</a>
+<a href="#work">Projekte</a>
+<a href="#contact" class="btn">Kontakt</a>
+<button id="mode" class="btn" aria-label="Theme umschalten">🌙</button>
+</nav>
+</div>
+</header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-grid">
-                <div>
-                    <span class="pill">♻️ Schnell, sicher und kostenlos – IT-Entsorgung mit Datenlöschung & Recycling</span>
-                    <h1>Kostenlose IT-Abholung & Datenlöschung</h1>
-                    <p class="lead">
-                        Ich biete Unternehmen und Privatpersonen die kostenlose Abholung alter Computer und Elektronikgeräte an.
-                        Alle Datenträger werden DSGVO-konform gelöscht oder vernichtet, bevor die Hardware fachgerecht recycelt oder wiederverwertet wird.
-                        So sparen Sie Zeit, schonen die Umwelt und sorgen für absolute Datensicherheit.
-                    </p>
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<span class="pill">♻️ Schnell, sicher und kostenlos – IT-Entsorgung mit Datenlöschung & Recycling</span>
+<h1>Kostenlose IT-Abholung & Datenlöschung</h1>
+<p class="lead">
+Ich biete Unternehmen und Privatpersonen die kostenlose Abholung alter Computer und Elektronikgeräte an.
+Alle Datenträger werden DSGVO-konform gelöscht oder vernichtet, bevor die Hardware fachgerecht recycelt oder wiederverwertet wird.
+So sparen Sie Zeit, schonen die Umwelt und sorgen für absolute Datensicherheit.
+</p>
 
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn primary">Projekt anfragen</a>
-                        <a href="#work" class="btn">Beispiele ansehen</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <strong>Highlights</strong>
-                    <ul>
-                        <li>🚚 Kostenlose Abholung</li>
-                        <li>🔒 Sichere Datenlöschung</li>
-                        <li>🌱 Nachhaltiges Recycling</li>
-                        <li>🔄 Wiederaufbereitung</li>
-                    </ul>
+<div class="hero-cta">
+<a href="#contact" class="btn primary">Projekt anfragen</a>
+<a href="#work" class="btn">Beispiele ansehen</a>
+</div>
+</div>
+<div class="card">
+<strong>Highlights</strong>
+<ul>
+<li>🚚 Kostenlose Abholung</li>
+<li>🔒 Sichere Datenlöschung</li>
+<li>🌱 Nachhaltiges Recycling</li>
+<li>🔄 Wiederaufbereitung</li>
+</ul>
 
-                </div>
-            </div>
-        </section>
+</div>
+</div>
+</section>
 
-        <section id="about">
-            <div class="container">
-                <h2>Über mich</h2>
-                <p class="lead">
-                    Mein Name ist Leandro, ich bin 18 Jahre alt und Schüler.
-                    Neben der Schule engagiere ich mich für Nachhaltigkeit und IT-Wiederverwertung.
-                    Ich biete Firmen die kostenlose Abholung ausgemusterter Hardware, sichere Datenlöschung nach DSGVO und die fachgerechte Wiederaufbereitung der Geräte.
-                    So sparen Sie Entsorgungskosten und leisten gleichzeitig einen Beitrag zum Umweltschutz.
-                </p>
+<section id="about">
+<div class="container">
+<h2>Über mich</h2>
+<p class="lead">
+Mein Name ist Leandro, ich bin 18 Jahre alt und Schüler.
+Neben der Schule engagiere ich mich für Nachhaltigkeit und IT-Wiederverwertung.
+Ich biete Firmen die kostenlose Abholung ausgemusterter Hardware, sichere Datenlöschung nach DSGVO und die fachgerechte Wiederaufbereitung der Geräte.
+So sparen Sie Entsorgungskosten und leisten gleichzeitig einen Beitrag zum Umweltschutz.
+</p>
 
-                <div class="grid-3">
-                    <div class="card feature">
-                        <div class="icon">
-                            🚚
-                        </div>
-                        <div>
-                            <strong>Kostenlose Abholung</strong><br><span class="muted">Wir holen alte Hardware gratis direkt bei Ihnen ab.</span>
-                        </div>
-                    </div>
-                    <div class="card feature">
-                        <div class="icon">
-                            🔒
-                        </div>
-                        <div>
-                            <strong>Sichere Datenlöschung</strong><br><span class="muted">DSGVO-konform, mit Löschprotokoll.</span>
-                        </div>
-                    </div>
-                    <div class="card feature">
-                        <div class="icon">
-                            🌱
-                        </div>
-                        <div>
-                            <strong>Umweltfreundliche Wiederverwertung</strong><br><span class="muted">Geräte werden aufbereitet oder fachgerecht recycelt.</span>
-                        </div>
-                    </div>
-                </div>
+<div class="grid-3">
+<div class="card feature">
+<div class="icon">
+🚚
+</div>
+<div>
+<strong>Kostenlose Abholung</strong><br><span class="muted">Wir holen alte Hardware gratis direkt bei Ihnen ab.</span>
+</div>
+</div>
+<div class="card feature">
+<div class="icon">
+🔒
+</div>
+<div>
+<strong>Sichere Datenlöschung</strong><br><span class="muted">DSGVO-konform, mit Löschprotokoll.</span>
+</div>
+</div>
+<div class="card feature">
+<div class="icon">
+🌱
+</div>
+<div>
+<strong>Umweltfreundliche Wiederverwertung</strong><br><span class="muted">Geräte werden aufbereitet oder fachgerecht recycelt.</span>
+</div>
+</div>
+</div>
 
-            </div>
-        </section>
+</div>
+</section>
 
-        <section id="services">
-            <div class="container">
-                <h2>Leistungen</h2>
-                <div class="grid-3">
-                    <div class="card">
-                        <strong>Hardware-Abholung</strong><p>
-                            Kostenlose Abholung von PCs, Laptops, Servern & Zubehör.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <strong>Datenvernichtung</strong><p>
-                            Sichere physische oder digitale Löschung aller Datenträger.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <strong>Refurbishment & Recycling</strong><p>
-                            Geräte werden wiederverkauft oder umweltgerecht entsorgt.
-                        </p>
-                    </div>
-                </div>
+<section id="services">
+<div class="container">
+<h2>Leistungen</h2>
+<div class="grid-3">
+<div class="card">
+<strong>Hardware-Abholung</strong><p>
+Kostenlose Abholung von PCs, Laptops, Servern & Zubehör.
+</p>
+</div>
+<div class="card">
+<strong>Datenvernichtung</strong><p>
+Sichere physische oder digitale Löschung aller Datenträger.
+</p>
+</div>
+<div class="card">
+<strong>Refurbishment & Recycling</strong><p>
+Geräte werden wiederverkauft oder umweltgerecht entsorgt.
+</p>
+</div>
+</div>
 
-            </div>
-        <section id="contact">
-            <div class="container">
-                <h2>Kontakt</h2>
-                <p class="lead">
-                    Schreib mir kurz, worum es geht. Du bekommst normalerweise innerhalb von 24h eine Antwort.
-                </p>
-                <form action="https://formspree.io/f/xanbvprn" method="POST" class="card" aria-labelledby="contact-heading">
-                    <label for="name">Name</label>
-                    <input id="name" name="name" placeholder="Max Mustermann" required>
+</div>
+<section id="contact">
+<div class="container">
+<h2>Kontakt</h2>
+<p class="lead">
+Schreib mir kurz, worum es geht. Du bekommst normalerweise innerhalb von 24h eine Antwort.
+</p>
+<form action="https://formspree.io/f/xanbvprn" method="POST" class="card" aria-labelledby="contact-heading">
+<label for="name">Name</label>
+<input id="name" name="name" placeholder="Max Mustermann" required>
 
-                    <label for="email">E‑Mail</label>
-                    <input id="email" name="email" type="email" placeholder="max@example.com" required>
+<label for="email">E‑Mail</label>
+<input id="email" name="email" type="email" placeholder="max@example.com" required>
 
-                    <label for="msg">Nachricht</label>
-                    <textarea id="msg" name="message" rows="5" placeholder="Womit kann ich helfen?" required></textarea>
+<label for="msg">Nachricht</label>
+<textarea id="msg" name="message" rows="5" placeholder="Womit kann ich helfen?" required></textarea>
 
-                    <input type="hidden" name="_subject" value="Neue Anfrage über die ByteBack‑Website">
-                    <button class="btn primary" type="submit">Absenden</button>
-                </form>
-            </div>
-        </section>
-    </main>
+<input type="hidden" name="_subject" value="Neue Anfrage über die ByteBack‑Website">
+<button class="btn primary" type="submit">Absenden</button>
+</form>
+</div>
+</section>
+</main>
 
-    <footer>
-        <footer>
-            <div class="container">
-                © <span id="year"></span> • ByteBack ·
-                    <a href="impressum.html">Impressum</a> ·
-                    <a href="#">Datenschutz</a> ·
-                    <a href="mailto:info@byteback.de">info@byteback.de</a>
-                </div>
-                <script>
-                    // Jahr
-                    document.getElementById('year').textContent = new Date().getFullYear();
+<footer>
+<footer>
+<div class="container">
+© <span id="year"></span> • ByteBack ·
+<a href="impressum.html">Impressum</a> ·
+<a href="#">Datenschutz</a> ·
+<a href="mailto:info@byteback.de">info@byteback.de</a>
+</div>
+<script>
+// Jahr
+document.getElementById('year').textContent = new Date().getFullYear();
 
-                    // Dark / Light Mode toggle
-                    const btn = document.getElementById('mode');
-                    const LS_KEY = 'site-theme';
-                    const current = localStorage.getItem(LS_KEY);
-                    if (current === 'light') document.documentElement.style.setProperty('color-scheme', 'light');
-                    if (current === 'dark') document.documentElement.style.setProperty('color-scheme', 'dark');
-                    btn.addEventListener('click', () => {
-                        const cs = getComputedStyle(document.documentElement).getPropertyValue('color-scheme').trim();
-                        const next = cs === 'dark' ? 'light': 'dark';
-                        document.documentElement.style.setProperty('color-scheme', next);
-                        localStorage.setItem(LS_KEY, next);
-                        btn.textContent = next === 'dark' ? '🌙': '☀️';
-                    });
-                </script>
-            </body>
-        </html>
+// Dark / Light Mode toggle
+const btn = document.getElementById('mode');
+const LS_KEY = 'site-theme';
+const current = localStorage.getItem(LS_KEY);
+if (current === 'light') document.documentElement.style.setProperty('color-scheme', 'light');
+if (current === 'dark') document.documentElement.style.setProperty('color-scheme', 'dark');
+btn.addEventListener('click', () => {
+const cs = getComputedStyle(document.documentElement).getPropertyValue('color-scheme').trim();
+const next = cs === 'dark' ? 'light': 'dark';
+document.documentElement.style.setProperty('color-scheme', next);
+localStorage.setItem(LS_KEY, next);
+btn.textContent = next === 'dark' ? '🌙': '☀️';
+});
+</script>
+</body>
+</html>
